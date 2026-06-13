@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🎉🥳 МИШЕ 26!!! 🥳🎉 ПРИХОДИ ИЛИ ПОЖАЛЕЕШЬ 😭</title>
+<meta name="description" content="🚨 ВСЕЛЕНСКОЕ ОБЪЯВЛЕНИЕ 🚨 ДР Михаила 30.06.2026 в 20:00 ГАЛАКТИКА 2.0 🚀">
+<style>
+  /* ================== RESET / БАЗА ================== */
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { overflow-x: hidden; width: 100%; }
+  :root {
+    --neon1: #ff00de;
+    --neon2: #00fff9;
+    --neon3: #fff700;
+    --neon4: #00ff5e;
+  }
+  body {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Segoe UI', cursive, sans-serif;
+    background: #05000f;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewport='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8E%89%3C/text%3E%3C/svg%3E") 16 16, auto;
+  }
+
+  /* ================== ФОНОВЫЙ РЕЙВ-ГРАДИЕНТ ================== */
+  .bg-rave {
+    position: fixed; inset: 0; z-index: -3;
+    background: linear-gradient(135deg, #ff00de, #00fff9, #fff700, #00ff5e, #ff0000, #7700ff);
+    background-size: 1200% 1200%;
+    animation: rave 12s ease infinite;
+    filter: saturate(1.3);
+  }
+  @keyframes rave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .bg-stars {
+    position: fixed; inset: 0; z-index: -2;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+      radial-gradient(2px 2px at 60% 70%, #fff, transparent),
+      radial-gradient(1px 1px at 80% 10%, #fff, transparent),
+      radial-gradient(2px 2px at 40% 80%, #fff, transparent),
+      radial-gradient(1px 1px at 90% 50%, #fff, transparent),
+      radial-gradient(2px 2px at 10% 60%, #fff, transparent);
+    background-size: 300px 300px;
+    opacity: .5;
+    animation: twinkle 3s steps(2) infinite;
+  }
+  @keyframes twinkle { 50% { opacity: .15; } }
+  .bg-dark { position: fixed; inset: 0; z-index: -1; background: rgba(5,0,15,.45); }
+
+  /* ================== ПЛАВАЮЩИЕ ЭМОДЗИ ================== */
+  .floaties { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .floaty {
+    position: absolute; bottom: -60px; font-size: 32px;
+    animation: floatUp linear infinite;
+    opacity: .85;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: .9; }
+    90% { opacity: .9; }
+    100% { transform: translateY(-110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* ================== БЕГУЩАЯ СТРОКА ================== */
+  .marquee {
+    position: relative; z-index: 5;
+    background: #000;
+    color: var(--neon3);
+    font-weight: bold;
+    padding: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-top: 3px dashed var(--neon1);
+    border-bottom: 3px dashed var(--neon2);
+    font-size: 18px;
+    text-shadow: 0 0 8px var(--neon3);
+  }
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollLeft 18s linear infinite;
+  }
+  @keyframes scrollLeft { to { transform: translateX(-100%); } }
+
+  /* ================== КОНТЕЙНЕР ================== */
+  .wrap { position: relative; z-index: 5; padding: 20px 14px 80px; max-width: 820px; margin: 0 auto; }
+
+  /* ================== ШАПКА / ЗАГОЛОВОК ================== */
+  .alarm {
+    font-size: clamp(20px, 6vw, 40px);
+    font-weight: 900;
+    color: #fff;
+    margin: 18px 0 6px;
+    animation: blink 1s steps(2) infinite, shake 0.5s infinite;
+    text-shadow: 0 0 10px red, 0 0 20px red;
+  }
+  @keyframes blink { 50% { opacity: .25; } }
+  @keyframes shake {
+    0%,100% { transform: translateX(0) rotate(0); }
+    25% { transform: translateX(-3px) rotate(-1deg); }
+    75% { transform: translateX(3px) rotate(1deg); }
+  }
+
+  h1.title {
+    font-size: clamp(34px, 11vw, 90px);
+    font-weight: 900;
+    line-height: 1;
+    margin: 10px 0;
+    background: linear-gradient(90deg, var(--neon1), var(--neon3), var(--neon2), var(--neon4), var(--neon1));
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hueSlide 4s linear infinite, bounce 1.6s ease-in-out infinite;
+    filter: drop-shadow(0 0 14px var(--neon1));
+    letter-spacing: -2px;
+  }
+  @keyframes hueSlide { to { background-position: 300% center; } }
+  @keyframes bounce { 50% { transform: scale(1.06) rotate(-1deg); } }
+
+  .subtitle {
+    font-size: clamp(15px, 4.5vw, 24px);
+    margin: 6px 0 4px;
+    color: #fff;
+    text-shadow: 0 0 10px var(--neon2);
+    animation: rainbowText 3s linear infinite;
+  }
+  @keyframes rainbowText {
+    0% { color: #ff0000; } 16% { color: #ff9900; } 33% { color: #fff700; }
+    50% { color: #00ff5e; } 66% { color: #00fff9; } 83% { color: #ff00de; } 100% { color: #ff0000; }
+  }
+
+  /* ================== ГИГАНТСКОЕ ЧИСЛО 26 ================== */
+  .big26 {
+    font-size: clamp(90px, 38vw, 280px);
+    font-weight: 900;
+    line-height: .9;
+    margin: 4px 0;
+    background: conic-gradient(from 0deg, #ff00de, #00fff9, #fff700, #00ff5e, #ff00de);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: spin3d 5s linear infinite;
+    filter: drop-shadow(0 0 24px #fff);
+    display: inline-block;
+  }
+  @keyframes spin3d { 50% { transform: perspective(400px) rotateY(180deg) scale(1.1);} 100% { transform: perspective(400px) rotateY(360deg);} }
+
+  /* ================== БЭЙБИ-БЛОК ================== */
+  .baby {
+    font-size: clamp(15px, 4.4vw, 22px);
+    margin: 10px auto;
+    max-width: 640px;
+    line-height: 1.5;
+  }
+  .baby b { color: var(--neon3); text-shadow: 0 0 8px var(--neon3); }
+
+  /* ================== КАРТОЧКИ КОГДА/ГДЕ ================== */
+  .cards { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 24px 0; }
+  .card {
+    flex: 1 1 280px;
+    background: rgba(0,0,0,.55);
+    border: 3px solid var(--neon2);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 0 18px var(--neon2), inset 0 0 18px rgba(0,255,249,.15);
+    animation: cardGlow 2.5s ease-in-out infinite alternate;
+    backdrop-filter: blur(2px);
+  }
+  .card:nth-child(2) { border-color: var(--neon1); box-shadow: 0 0 18px var(--neon1), inset 0 0 18px rgba(255,0,222,.15); animation-delay: .6s; }
+  @keyframes cardGlow { to { transform: translateY(-6px) scale(1.02); } }
+  .card .label { font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+  .card .big { font-size: clamp(22px, 6vw, 34px); font-weight: 900; color: var(--neon3); text-shadow: 0 0 10px var(--neon3); margin: 6px 0; }
+  .card .small { font-size: 15px; opacity: .95; margin-top: 6px; line-height: 1.4; }
+  .card a { color: var(--neon4); font-weight: bold; word-break: break-word; }
+
+  /* ================== ТАЙМЕР ================== */
+  .countdown { margin: 26px 0; }
+  .countdown h2 { font-size: clamp(18px, 5vw, 28px); margin-bottom: 12px; text-shadow: 0 0 10px var(--neon1); }
+  .clock { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .clock .unit {
+    background: #000; border: 2px solid var(--neon3); border-radius: 14px;
+    padding: 10px 6px; min-width: 74px;
+    box-shadow: 0 0 14px var(--neon3);
+  }
+  .clock .num { font-size: clamp(26px, 8vw, 44px); font-weight: 900; color: var(--neon3); text-shadow: 0 0 8px var(--neon3); }
+  .clock .cap { font-size: 12px; opacity: .85; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* ================== ПРОГРАММА ================== */
+  .section-title {
+    font-size: clamp(24px, 7vw, 48px); font-weight: 900; margin: 36px 0 16px;
+    animation: wobble 2s ease-in-out infinite;
+    text-shadow: 0 0 12px var(--neon1), 0 0 24px var(--neon2);
+  }
+  @keyframes wobble { 0%,100% { transform: rotate(-2deg);} 50% { transform: rotate(2deg);} }
+
+  .program { display: grid; gap: 14px; text-align: left; max-width: 640px; margin: 0 auto; }
+  .prog-item {
+    background: rgba(0,0,0,.5);
+    border-left: 6px solid var(--neon4);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: clamp(15px, 4.2vw, 20px);
+    transition: transform .2s;
+    cursor: pointer;
+  }
+  .prog-item:hover { transform: scale(1.04) rotate(-1deg); border-left-color: var(--neon1); background: rgba(255,0,222,.12); }
+  .prog-item .emoji { font-size: 26px; }
+
+  /* ================== ЧЕК-ЛИСТ ================== */
+  .checklist { text-align: left; max-width: 580px; margin: 0 auto; display: grid; gap: 8px; }
+  .check {
+    background: rgba(0,0,0,.45);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: clamp(15px, 4.2vw, 19px);
+    cursor: pointer;
+    user-select: none;
+    display: flex; align-items: center; gap: 10px;
+    transition: background .2s, transform .15s;
+  }
+  .check:hover { transform: translateX(6px); }
+  .check .box { font-size: 24px; transition: transform .2s; }
+  .check.done { background: rgba(0,255,94,.18); text-decoration: line-through; opacity: .8; }
+  .check.done .box { transform: scale(1.3) rotate(360deg); }
+  .check.forbidden.done { background: rgba(255,0,0,.25); }
+
+  /* ================== ВАРНИНГ ================== */
+  .warn {
+    margin: 30px auto; max-width: 640px;
+    background: rgba(255,0,0,.18);
+    border: 3px dashed red;
+    border-radius: 16px;
+    padding: 18px;
+    font-size: clamp(16px, 4.5vw, 22px);
+    animation: pulseRed 1.2s ease-in-out infinite;
+  }
+  @keyframes pulseRed { 50% { box-shadow: 0 0 30px red; transform: scale(1.02);} }
+
+  /* ================== ФИНАЛЬНЫЙ БАННЕР ================== */
+  .final {
+    margin-top: 40px;
+    background: rgba(0,0,0,.6);
+    border: 4px solid var(--neon3);
+    border-radius: 24px;
+    padding: 30px 18px 40px;
+    box-shadow: 0 0 30px var(--neon3);
+    position: relative;
+    overflow: hidden;
+  }
+  .final h2 {
+    font-size: clamp(30px, 10vw, 64px);
+    font-weight: 900;
+    margin-bottom: 26px;
+    animation: bounce 1.2s ease-in-out infinite;
+    text-shadow: 0 0 14px var(--neon1);
+  }
+  .btn-row {
+    position: relative;
+    display: flex; gap: 24px; justify-content: center; align-items: center;
+    min-height: 90px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    font-family: inherit;
+    font-size: clamp(22px, 7vw, 34px);
+    font-weight: 900;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .15s;
+  }
+  .btn-yes {
+    background: linear-gradient(45deg, #00ff5e, #00fff9);
+    box-shadow: 0 0 20px #00ff5e;
+    color: #003;
+    animation: yesPulse 1s ease-in-out infinite;
+  }
+  @keyframes yesPulse { 50% { transform: scale(1.1); box-shadow: 0 0 36px #00ff5e; } }
+  .btn-yes:active { transform: scale(.92); }
+  .btn-no {
+    background: linear-gradient(45deg, #ff0040, #ff00de);
+    box-shadow: 0 0 16px #ff0040;
+  }
+  /* на десктопе нет может позиционироваться абсолютно при побеге */
+  .btn-no.runaway { position: fixed; z-index: 9999; transition: top .15s linear, left .15s linear; }
+
+  /* ================== ПОБЕДНЫЙ ЭКРАН ================== */
+  .victory { display: none; margin-top: 24px; }
+  .victory.show { display: block; animation: popIn .5s; }
+  @keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+  .victory .huge {
+    font-size: clamp(40px, 16vw, 120px);
+    font-weight: 900;
+    background: linear-gradient(90deg, #fff700, #00fff9, #ff00de, #00ff5e, #fff700);
+    background-size: 300% auto;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hueSlide 2s linear infinite, bounce 1s ease-in-out infinite;
+  }
+  .victory .tg {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: clamp(18px, 5vw, 26px);
+    font-weight: 900;
+    background: #229ED9;
+    color: #fff;
+    padding: 16px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 24px #229ED9;
+    animation: tgPulse 1s ease-in-out infinite;
+  }
+  @keyframes tgPulse { 50% { transform: scale(1.08) rotate(-2deg);} }
+  .victory .tip { margin-top: 16px; font-size: 17px; }
+  .victory .tip b { color: var(--neon3); font-size: 22px; }
+
+  /* ================== ФУТЕР ================== */
+  footer { margin-top: 50px; font-size: 13px; opacity: .8; padding-bottom: 30px; }
+
+  /* ================== САЛЮТЫ canvas ================== */
+  #fireworks { position: fixed; inset: 0; pointer-events: none; z-index: 9998; }
+
+  /* ================== КНОПКА ЗВУКА ================== */
+  .sound-btn {
+    position: fixed; top: 10px; right: 10px; z-index: 9999;
+    background: #000; color: #fff; border: 2px solid var(--neon2);
+    border-radius: 50%; width: 50px; height: 50px; font-size: 22px;
+    cursor: pointer; box-shadow: 0 0 12px var(--neon2);
+  }
+
+  /* радужный выделенный текст */
+  ::selection { background: var(--neon1); color: #000; }
+</style>
+</head>
+<body>
+
+<!-- ФОНЫ -->
+<div class="bg-rave"></div>
+<div class="bg-stars"></div>
+<div class="bg-dark"></div>
+<div class="floaties" id="floaties"></div>
+
+<!-- САЛЮТ -->
+<canvas id="fireworks"></canvas>
+
+<!-- ФОНОВАЯ ПЕСНЯ 🎵 -->
+<audio id="bgMusic" src="Girlfriend.mp3" loop preload="auto"></audio>
+
+<!-- КНОПКА ЗВУКА -->
+<button class="sound-btn" id="soundBtn" title="ВКЛЮЧИ / ВЫКЛЮЧИ МУЗЫКУ 🎵">🔇</button>
+
+<!-- ПЛАШКА "НАЖМИ ДЛЯ ЗВУКА" если автоплей заблокирован -->
+<div id="tapToPlay" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(5,0,15,.92);
+     color:#fff;display:none;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;text-align:center;padding:20px;">
+  <div style="font-size:clamp(40px,16vw,120px);animation:bounce 1s infinite">🎵🥳🎵</div>
+  <div style="font-size:clamp(22px,7vw,40px);font-weight:900;margin:16px 0;text-shadow:0 0 14px #ff00de">НАЖМИ, ЧТОБЫ ВОРВАТЬСЯ<br>В ГАЛАКТИКУ 🚀</div>
+  <div style="font-size:clamp(15px,4.5vw,22px);opacity:.9">(включится музыка и весь движ 🔊🎉)</div>
+</div>
+
+<!-- БЕГУЩАЯ СТРОКА -->
+<div class="marquee"><span>🚨 ВНИМАНИЕ ВНИМАНИЕ ВНИМАНИЕ 🚨 МИХАИЛУ 26 ЛЕТ 🎂 30.06.2026 в 20:00 🕗 ГАЛАКТИКА 2.0 🚀 БОУЛИНГ 🎳 КАЛЬЯНЫ 💨 КУХНЯ 🍕 АЛКОГОЛЬ 🍻 КАРАОКЕ 🎤 КТО НЕ ПРИДЁТ — БУДЕТ ГОРЬКО ПЛАКАТЬ 😭😭😭 ПОДТВЕРДИ ЧТО ПРИДЁШЬ 📲 ПОЕХАЛИ В ГАЛАКТИКУ 🌌 &nbsp;&nbsp;&nbsp; 🚨 ВНИМАНИЕ ВНИМАНИЕ 🚨 ДЕСАНТИРОВАЛСЯ МИКРО-БЭЙБИ МИХАИЛ 👶🍼 МИР НИКОГДА НЕ БУДЕТ ПРЕЖНИМ 😭🙏💖 &nbsp;&nbsp;</span></div>
+
+<div class="wrap">
+
+  <div class="alarm">🚨📢 ОБЪЯВЛЕНИЕ ВСЕЛЕНСКОЙ ВАЖНОСТИ 📢🚨</div>
+
+  <div class="subtitle">🌟👶✨ РОВНО 26 ЛЕТ НАЗАД на планету Земля 🌍 десантировался МИКРО-БЭЙБИ 👶🍼💫</div>
+
+  <h1 class="title">МИХАИЛУ<br>СТУКНУЛО</h1>
+  <div class="big26">26</div>
+  <div class="subtitle">…и мир уже НИКОГДА не будет прежним 😭🙏💖</div>
+
+  <p class="baby">
+    🎯🎳 А ТЕПЕРЬ ОН ВЫРОС 📈💪😎 И ЗОВЁТ ВАС НА СВОЙ <b>ДЕНЬ РОЖДЕНИЯ</b> 🎂🎂🎂<br>
+    📅 Дата рождения легенды: <b>30.06.2000</b> 👶
+  </p>
+
+  <!-- КОГДА / ГДЕ -->
+  <div class="cards">
+    <div class="card">
+      <div class="label">⏰ КОГДА ❗</div>
+      <div class="big">📅 30 ИЮНЯ 2026</div>
+      <div class="big">🕗 РОВНО В 20:00</div>
+      <div class="small">не в 22:00 😒 не «попозже» 😤 — ВО́ВРЕМЯ ⏰</div>
+    </div>
+    <div class="card">
+      <div class="label">📍 ГДЕ ❗</div>
+      <div class="big">🛸 «ГАЛАКТИКА 2.0»</div>
+      <div class="small">
+        🏢 ул. Академика Королёва, 8а, Москва<br>
+        🎡 ориентир — ВДНХ (12 мин пешком 🚶‍♂️📡)<br>
+        📌 <a href="https://go.2gis.com/kQW5r" target="_blank" rel="noopener">точка на карте 2ГИС</a><br>
+        🌐 <a href="https://galaktica20.ru/price_table/" target="_blank" rel="noopener">galaktica20.ru</a><br>
+        📞 +7 (499) 110-68-68 · ✈️ <a href="https://t.me/galakticamsk" target="_blank" rel="noopener">t.me/galakticamsk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ТАЙМЕР -->
+  <div class="countdown">
+    <h2>⏳ ДО ВЗРЫВА ПРАЗДНИКА ОСТАЛОСЬ 💥</h2>
+    <div class="clock">
+      <div class="unit"><div class="num" id="d">00</div><div class="cap">дней</div></div>
+      <div class="unit"><div class="num" id="h">00</div><div class="cap">часов</div></div>
+      <div class="unit"><div class="num" id="m">00</div><div class="cap">минут</div></div>
+      <div class="unit"><div class="num" id="s">00</div><div class="cap">секунд</div></div>
+    </div>
+  </div>
+
+  <!-- ПРОГРАММА -->
+  <div class="section-title">🎉 ЧТО БУДЕТ 🎉<br><span style="font-size:.5em">(держитесь за стулья 🪑😱)</span></div>
+  <div class="program">
+    <div class="prog-item"><span class="emoji">🎳💥</span> <b>БОУЛИНГ</b> — катаем шары, выбиваем СТРАЙКИ 🎯🔥 (за серию, говорят, наливают 👀🍺😏)</div>
+    <div class="prog-item"><span class="emoji">🍽️😋</span> <b>ВКУСНАЯ КУХНЯ</b> — кушаем ВКУСНО 🤤🍕🍗🍤, аж пальчики оближешь 👅✨</div>
+    <div class="prog-item"><span class="emoji">💨🕯️</span> <b>КАЛЬЯНЫ</b> — ДЫМИМ КАК КАДИЛО (батюшка одобрил бы 😇🙏), облака размером с галактику 🌌😮‍💨</div>
+    <div class="prog-item"><span class="emoji">🍹🥂</span> <b>АЛКОГОЛЬ</b> — звеним бокалами 🍷🍻🥂 за именинника 👑</div>
+    <div class="prog-item"><span class="emoji">🎤🔊</span> <b>КАРАОКЕ</b> — орём хиты так, что соседняя галактика слышит 🌠</div>
+  </div>
+
+  <!-- ЧЕК-ЛИСТ -->
+  <div class="section-title">📋✨ ЧЕК-ЛИСТ ИДЕАЛЬНОГО ГОСТЯ ✨📋</div>
+  <p class="baby">(тыкай по пунктам, прежде чем выйти из дома 😤👇)</p>
+  <div class="checklist" id="checklist">
+    <div class="check"><span class="box">⬜</span> Прийти 🚶‍♂️🚶‍♀️ (база, без этого никак)</div>
+    <div class="check"><span class="box">⬜</span> Прийти ВОВРЕМЯ ⏰ (30.06 в 20:00, не в 22:00 😒)</div>
+    <div class="check"><span class="box">⬜</span> Быть мега красивым 💅😎✨</div>
+    <div class="check"><span class="box">⬜</span> Принести мега хорошее настроение 😁🎈</div>
+    <div class="check"><span class="box">⬜</span> Потренировать лёгкие для кальянов 🫁💨</div>
+    <div class="check"><span class="box">⬜</span> Подготовить горло к караоке 🎤🔊</div>
+    <div class="check"><span class="box">⬜</span> Прокачать руку для страйков 🎳💪</div>
+    <div class="check"><span class="box">⬜</span> Подтвердить, что придёшь — написать Мише в тг ✍️📲</div>
+    <div class="check forbidden"><span class="box">🚫</span> НЕ прийти ❌ — единственный пункт, который НЕЛЬЗЯ отмечать 😭</div>
+  </div>
+
+  <!-- ВАРНИНГ -->
+  <div class="warn">
+    ⚠️ КТО НЕ ПРИДЁТ — будет горько плакать 😭😭😭 в облаке чужого дыма 🥲💨<br><br>
+    🥳 ЖДЁМ КАЖДОГО, ОБНИМАЕМ КАЖДОГО, ОКУРИВАЕМ КАЖДОГО 🤗💨💞
+  </div>
+
+  <!-- ФИНАЛЬНЫЙ БАННЕР -->
+  <div class="final">
+    <h2 id="finalQ">🥺 Ты придёшь? 🥺</h2>
+    <div class="btn-row" id="btnRow">
+      <button class="btn btn-yes" id="yesBtn">ДА 🥳</button>
+      <button class="btn btn-no" id="noBtn">нет 😈</button>
+    </div>
+
+    <div class="victory" id="victory">
+      <div class="huge">КРУТО!!! 🎉🔥</div>
+      <p class="baby" style="margin-top:14px">Ты сделал правильный выбор, легенда 👑✨<br>Галактика ждёт именно тебя 🚀🌌</p>
+      <a class="tg" id="tgLink" href="https://t.me/o77777o" target="_blank" rel="noopener">✈️ Написать Мише в ТГ: @o77777o</a>
+      <p class="tip">…и не забудь написать что <b>ПРИДЁШЬ</b> 😎🎂</p>
+    </div>
+  </div>
+
+  <footer>
+    🎂🎈🥳🎊✨🍾🎁 сделано с любовью и кринжем для Михаила 🎁🍾✨🎊🥳🎈🎂<br>
+    © 2026 · ПОЕХАЛИ В ГАЛАКТИКУ 🚀🌌
+  </footer>
+
+</div>
+
+<script>
+/* ============ ПЛАВАЮЩИЕ ЭМОДЗИ ============ */
+(function(){
+  const emojis = ['🎉','🎈','🥳','🎊','✨','🎂','🍾','🎁','🚀','🌌','🛸','💨','🎳','🍻','🎤','🪩','💖','😎','🔥','👑','🍕','🎯'];
+  const box = document.getElementById('floaties');
+  const N = window.innerWidth < 600 ? 16 : 28;
+  for (let i = 0; i < N; i++) {
+    const e = document.createElement('div');
+    e.className = 'floaty';
+    e.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    e.style.left = Math.random()*100 + 'vw';
+    e.style.fontSize = (18 + Math.random()*34) + 'px';
+    e.style.animationDuration = (7 + Math.random()*10) + 's';
+    e.style.animationDelay = (-Math.random()*15) + 's';
+    box.appendChild(e);
+  }
+})();
+
+/* ============ ТАЙМЕР ============ */
+(function(){
+  const target = new Date('2026-06-30T20:00:00+03:00').getTime();
+  const d = document.getElementById('d'), h = document.getElementById('h'),
+        m = document.getElementById('m'), s = document.getElementById('s');
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    let diff = target - Date.now();
+    if (diff < 0) {
+      d.textContent='00';h.textContent='00';m.textContent='00';s.textContent='00';
+      document.querySelector('.countdown h2').textContent = '🎉 ПРАЗДНИК УЖЕ ИДЁТ — БЕГИ В ГАЛАКТИКУ! 🚀';
+      return;
+    }
+    d.textContent = pad(Math.floor(diff/86400000));
+    h.textContent = pad(Math.floor(diff/3600000)%24);
+    m.textContent = pad(Math.floor(diff/60000)%60);
+    s.textContent = pad(Math.floor(diff/1000)%60);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+/* ============ ЧЕК-ЛИСТ ============ */
+document.querySelectorAll('#checklist .check').forEach(function(item){
+  item.addEventListener('click', function(){
+    const forbidden = item.classList.contains('forbidden');
+    if (forbidden && !item.classList.contains('done')) {
+      // нельзя отмечать "не прийти"
+      item.style.animation = 'shake .4s';
+      const box = item.querySelector('.box');
+      box.textContent = '🚫';
+      alert('🚫😭 ЭТОТ ПУНКТ ОТМЕЧАТЬ НЕЛЬЗЯ!!! ТОЛЬКО ПРИХОДИТЬ! 🥺🎂');
+      setTimeout(()=> item.style.animation='', 400);
+      return;
+    }
+    item.classList.toggle('done');
+    const box = item.querySelector('.box');
+    box.textContent = item.classList.contains('done') ? '✅' : (forbidden ? '🚫' : '⬜');
+  });
+});
+
+/* ============ КНОПКА "НЕТ" — УБЕГАЕТ ============ */
+(function(){
+  const noBtn = document.getElementById('noBtn');
+  const row = document.getElementById('btnRow');
+  const isTouch = window.matchMedia('(hover: none)').matches || ('ontouchstart' in window);
+  const phrases = ['не-а 😏','куда?! 😈','мимо 🤪','попробуй ещё 😜','неть 🙅','ха-ха 😂','нет тут нет 👻','я быстрее 🏃','ну ты упёртый 😅'];
+  let runs = 0;
+
+  function jump(){
+    runs++;
+    noBtn.classList.add('runaway');
+    const bw = noBtn.offsetWidth, bh = noBtn.offsetHeight;
+    const maxX = window.innerWidth - bw - 10;
+    const maxY = window.innerHeight - bh - 10;
+    const x = Math.max(10, Math.random()*maxX);
+    const y = Math.max(10, Math.random()*maxY);
+    noBtn.style.left = x + 'px';
+    noBtn.style.top = y + 'px';
+    noBtn.textContent = phrases[runs % phrases.length];
+    // чуть подрастает кнопка ДА, чтобы соблазнить
+    if (runs % 3 === 0) {
+      const yes = document.getElementById('yesBtn');
+      yes.style.fontSize = Math.min(60, 28 + runs) + 'px';
+    }
+  }
+
+  if (isTouch) {
+    // на телефоне: по нажатию (touch/click) отскакивает
+    noBtn.addEventListener('touchstart', function(e){ e.preventDefault(); jump(); }, {passive:false});
+    noBtn.addEventListener('click', jump);
+  } else {
+    // на десктопе: убегает от мышки при наведении
+    noBtn.addEventListener('mouseenter', jump);
+    noBtn.addEventListener('click', jump);
+  }
+})();
+
+/* ============ КНОПКА "ДА" — САЛЮТЫ + ПОБЕДА ============ */
+document.getElementById('yesBtn').addEventListener('click', function(){
+  document.getElementById('victory').classList.add('show');
+  document.getElementById('finalQ').textContent = '🎉 ИИИИ ПРАВИЛЬНО!!! 🎉';
+  startFireworksShow();
+  document.getElementById('victory').scrollIntoView({behavior:'smooth', block:'center'});
+  initSound(true); // попытаться бахнуть звук
+  burstConfetti();
+});
+
+/* ============ САЛЮТЫ (canvas) ============ */
+const canvas = document.getElementById('fireworks');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resize(){ canvas.width = innerWidth; canvas.height = innerHeight; }
+resize(); addEventListener('resize', resize);
+
+function spawnFirework(x, y){
+  const colors = ['#ff00de','#00fff9','#fff700','#00ff5e','#ff3b3b','#ffffff','#ff9d00'];
+  const c = colors[Math.floor(Math.random()*colors.length)];
+  const count = 60;
+  for (let i=0;i<count;i++){
+    const a = (Math.PI*2*i)/count;
+    const sp = 2 + Math.random()*5;
+    particles.push({ x, y, vx: Math.cos(a)*sp, vy: Math.sin(a)*sp, life: 1, color: c, size: 2+Math.random()*2 });
+  }
+}
+let fwRunning = false;
+function fwLoop(){
+  ctx.fillStyle = 'rgba(5,0,15,0.18)';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{
+    p.x += p.vx; p.y += p.vy; p.vy += 0.04; p.life -= 0.012;
+    ctx.globalAlpha = Math.max(0,p.life);
+    ctx.fillStyle = p.color;
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.size,0,Math.PI*2); ctx.fill();
+  });
+  ctx.globalAlpha = 1;
+  particles = particles.filter(p=>p.life>0);
+  if (particles.length>0 || fwRunning) requestAnimationFrame(fwLoop);
+  else ctx.clearRect(0,0,canvas.width,canvas.height);
+}
+function startFireworksShow(){
+  fwRunning = true;
+  fwLoop();
+  let shots = 0;
+  const iv = setInterval(()=>{
+    spawnFirework(Math.random()*canvas.width, Math.random()*canvas.height*0.6 + 40);
+    shots++;
+    if (shots > 14){ clearInterval(iv); fwRunning = false; }
+  }, 350);
+}
+
+/* ============ КОНФЕТТИ (эмодзи-дождь) ============ */
+function burstConfetti(){
+  const conf = ['🎉','🎊','✨','🥳','🎈','💥','⭐','🍾'];
+  for (let i=0;i<40;i++){
+    const el = document.createElement('div');
+    el.textContent = conf[Math.floor(Math.random()*conf.length)];
+    el.style.cssText = `position:fixed;z-index:9997;left:${Math.random()*100}vw;top:-40px;font-size:${20+Math.random()*24}px;pointer-events:none;transition:transform 2.6s ease-in, opacity 2.6s;`;
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>{
+      el.style.transform = `translateY(${innerHeight+80}px) rotate(${Math.random()*720}deg)`;
+      el.style.opacity = '0';
+    });
+    setTimeout(()=>el.remove(), 2800);
+  }
+}
+
+/* ============ ФОНОВАЯ МУЗЫКА 🎵 ============ */
+const bgMusic = document.getElementById('bgMusic');
+const soundBtn = document.getElementById('soundBtn');
+const tapOverlay = document.getElementById('tapToPlay');
+bgMusic.volume = 0.6;
+
+function startMusic(){
+  return bgMusic.play().then(()=>{
+    soundBtn.textContent = '🔊';
+  });
+}
+function initSound(){ startMusic().catch(()=>{}); } // совместимость со старыми вызовами
+
+// 2) если заблокировано — старт по первому взаимодействию (плашка или любой клик/тап/клавиша)
+function unlockAudio(){
+  startMusic().then(function(){
+    tapOverlay.style.display = 'none';
+    burstConfetti();
+  }).catch(()=>{});
+  document.removeEventListener('click', unlockAudio);
+  document.removeEventListener('touchstart', unlockAudio);
+  document.removeEventListener('keydown', unlockAudio);
+}
+
+// 1) пробуем автозапуск сразу при заходе
+window.addEventListener('load', function(){
+  startMusic().catch(function(){
+    // автоплей заблокирован браузером — показываем плашку "нажми" и ждём взаимодействия
+    tapOverlay.style.display = 'flex';
+    document.addEventListener('click', unlockAudio);
+    document.addEventListener('touchstart', unlockAudio);
+    document.addEventListener('keydown', unlockAudio);
+  });
+});
+
+// 3) кнопка вкл/выкл музыки
+soundBtn.addEventListener('click', function(e){
+  e.stopPropagation();
+  if (bgMusic.paused) {
+    startMusic().catch(()=>{});
+  } else {
+    bgMusic.pause();
+    soundBtn.textContent = '🔇';
+  }
+});
+
+/* ============ ПАСХАЛКА: тряска заголовка по клику ============ */
+document.querySelector('.title').addEventListener('click', function(){
+  burstConfetti();
+  spawnFirework(innerWidth/2, innerHeight/3);
+  fwRunning ? null : (function(){ fwRunning=true; fwLoop(); setTimeout(()=>fwRunning=false,500); })();
+});
+</script>
+</body>
+</html>
